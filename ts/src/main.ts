@@ -1,0 +1,1 @@
+export const myPackage = (thing: string) => thing + '!'

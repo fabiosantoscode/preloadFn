@@ -1,0 +1,19 @@
+// https://2ality.com/2021/06/typescript-esm-nodejs.html#tsconfig.json
+{
+  "compilerOptions": {
+    "rootDir": "ts",
+    "outDir": "dist/esm",
+    "target": "es2020",
+    "lib": [
+      "es2020",
+      "DOM"
+    ],
+    "module": "ES2020", // (A)
+    "moduleResolution": "Node", // (B)
+    "strict": true,
+    "sourceMap": true,
+    // Needed for CommonJS modules
+    "allowSyntheticDefaultImports": true, // (C)
+    "declaration": true,
+  }
+}
